@@ -37,7 +37,7 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` p
 Acesse o Jogo [Aqui!](https://carloseduts.github.io/Labirinto-Jogo/).
 <br />
 Versão Multijogador: [Labirinto-Jogo-Multijogador](https://github.com/CarlosEduts/Labirinto-Jogo-Multijogador).
-< br />
+<br />
 Versão Anterior: [v1.0](https://github.com/CarlosEduts/Labyrinth-Game)
 <br />
 Algoritmo responsável pela geração das imagens dos labirintos: [https://projeto-de-algoritmos.github.io/Grafos2_MazeGenerator/](https://projeto-de-algoritmos.github.io/Grafos2_MazeGenerator/)
