@@ -26,7 +26,7 @@ O Jogo de Labirinto foi desenvolvido por [Carlos Eduardo](https://github.com/Car
 
 ## Créditos dos Ícones 🎨
 
-Os ícones utilizados neste projeto foram cedidos pela biblioteca Tabler Icons. A Tabler Icons é uma fonte de ícones de alta qualidade, disponibilizada gratuitamente para desenvolvedores. Para mais informações sobre a biblioteca e para explorar sua vasta coleção de ícones, visite [https://tabler.io/icons](https://tabler.io/icons).
+Os ícones utilizados neste projeto foram cedidos pela biblioteca Tabler Icons. Para mais informações sobre a biblioteca e para explorar sua vasta coleção de ícones, visite [https://tabler.io/icons](https://tabler.io/icons).
 
 ## Licença 📝
 
