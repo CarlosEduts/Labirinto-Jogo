@@ -22,7 +22,7 @@ let player = {
 
 let colors = {
   wall: "rgb(24, 24, 24)",
-  player: "#05C7F240",
+  player: "#05C7F2",
   exit: "#049DD9",
 };
 
@@ -35,25 +35,21 @@ for (var i = 0; i <= numberImages; i++) {
   maps.appendChild(img);
 }
 
+// Desenha a imagem de fundo, jogador e saída no canvas
+function draw() {
+  ctx.drawImage(image, 0, 0, image.width, image.height);
+  ctx.fillStyle = colors.player;
+  ctx.fillRect(player.x * pixel, player.y * pixel, pixel, pixel);
+  ctx.fillStyle = colors.exit;
+  ctx.fillRect(image.width - pixel * 2, image.height - pixel * 2, pixel, pixel);
+}
+
 // Carregar a imagem e renderizar o jogo
 function init() {
   image.onload = function () {
     canvas.width = image.width;
     canvas.height = image.height;
-    ctx.drawImage(image, 0, 0, image.width, image.height);
-
-    // Desenha Jogador no canvas
-    ctx.fillStyle = colors.player;
-    ctx.fillRect(player.x * pixel, player.y * pixel, pixel, pixel);
-
-    // Desenhar Saída no canvas
-    ctx.fillStyle = colors.exit;
-    ctx.fillRect(
-      image.width - pixel * 2,
-      image.height - pixel * 2,
-      pixel,
-      pixel
-    );
+    draw();
   };
   image.src = image.src; // Forçar o carregamento da imagem, se necessário
 }
@@ -131,9 +127,7 @@ function renderPlayer(position) {
     victory();
   }
 
-  // Desenha Jogador no canvas
-  ctx.fillStyle = colors.player;
-  ctx.fillRect(player.x * pixel, player.y * pixel, pixel, pixel);
+  draw();
 }
 
 // Capturar Click do Jogador
